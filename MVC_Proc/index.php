@@ -17,6 +17,11 @@
                 $lesClasses = selectLesClasses();
                 //afficher les classes
                 require_once("vue/vue_les_classes.php");
+
+                //recuperation des professeurs
+                $lesProfesseurs = selectLesProfesseurs();
+                //afficher les professeurs
+                require_once("vue/vue_les_professeurs.php");
             ?>
     </center>
 </body>
