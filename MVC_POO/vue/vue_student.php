@@ -12,7 +12,7 @@
     <?php
         foreach ($Students as $Student){
             echo "<tr>";
-            echo "<td>".$Student['idclasse']."</td>";
+            echo "<td>".$Student['idetudiant']."</td>";
             echo "<td>".$Student['nom']."</td>";
             echo "<td>".$Student['prenom']."</td>";
             echo "<td>".$Student['adresse']."</td>";
