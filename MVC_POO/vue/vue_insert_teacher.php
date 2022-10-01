@@ -2,19 +2,19 @@
 <form action="" method="post">
     <table>
         <tr>
-            <td>Nom professeur :</td>
+            <td>Nom professeur:</td>
             <td><input type="text" name="nom"></td>
         </tr>
         <tr>
-            <td>Prenom professeur :</td>
+            <td>Prenom professeur:</td>
             <td><input type="text" name="nom"></td>
         </tr>
         <tr>
-            <td> Diplome :</td>
+            <td> Diplome:</td>
             <td><input type="text" name="nom"></td>
         </tr>
         <tr>
-            <td>Email :</td>
+            <td>Email:</td>
             <td><input type="text" name="nom"></td>
         </tr>
         <tr>
