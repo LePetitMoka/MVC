@@ -53,3 +53,9 @@ insert into classe values
 insert into professeur values
 (null, "Ben Ahmed", "OKA", "BTS", "a@gmail.com"),
 (null, "Chouaky", "Abdel", "BTS", "b@gmail.com");
+
+insert into etudiant values
+(null, "M.", "Sebastien", "12 rue de la Paix", "s@gmail.com", 1),
+(null, "D.", "Xavier", "13 rue de la Paix", "x@gmail.com", 1),
+(null, "A.", "Tolga", "14 rue de la Paix", "t@gmail.com", 1),
+(null, "Y.", "Oumar", "15 rue de la Paix", "o@gmail.com", 1);

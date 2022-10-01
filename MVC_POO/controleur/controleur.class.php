@@ -21,5 +21,11 @@
 
             return $Teachers;
         }
+        public function selectAllStudents(){
+            $Students = $this->unModele->selectAllStudents();
+            // on fait traiter les données
+
+            return $Students;
+        }
     }
 ?>

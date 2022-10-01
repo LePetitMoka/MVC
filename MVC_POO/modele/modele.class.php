@@ -54,5 +54,25 @@
                 return null;
             }
         }
+        public function selectAllStudents(){
+            if ($this->unPDO != null){
+                $requete = "select * from etudiant;";
+
+                //preparation de la requete avant execution
+
+                $select = $this->unPDO-> prepare($requete);
+
+                //execution de la requete
+
+                $select -> execute();
+
+                //extraction des donnees
+
+                $Students = $select->fetchAll();
+                return $Students;
+            } else {
+                return null;
+            }
+        }
     }
 ?> 
