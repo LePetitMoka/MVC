@@ -59,3 +59,7 @@ insert into etudiant values
 (null, "D.", "Xavier", "13 rue de la Paix", "x@gmail.com", 1),
 (null, "A.", "Tolga", "14 rue de la Paix", "t@gmail.com", 1),
 (null, "Y.", "Oumar", "15 rue de la Paix", "o@gmail.com", 1);
+
+insert into enseignement values
+(null,"Developpement",999,10,"2023",1,1),
+(null,"BDD",999,10,"2023",1,2);

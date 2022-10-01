@@ -74,5 +74,25 @@
                 return null;
             }
         }
+        public function selectAllTeachings(){
+            if ($this->unPDO != null){
+                $requete = "select * from enseignement;";
+
+                //preparation de la requete avant execution
+
+                $select = $this->unPDO-> prepare($requete);
+
+                //execution de la requete
+
+                $select -> execute();
+
+                //extraction des donnees
+
+                $Teachings = $select->fetchAll();
+                return $Teachings;
+            } else {
+                return null;
+            }
+        }
     }
 ?> 

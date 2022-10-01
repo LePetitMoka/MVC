@@ -27,5 +27,11 @@
 
             return $Students;
         }
+        public function selectAllTeachings(){
+            $Teachings = $this->unModele->selectAllTeachings();
+            // on fait traiter les données
+
+            return $Teachings;
+        }
     }
 ?>
