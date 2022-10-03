@@ -21,6 +21,18 @@
             //inserer dans la BDD
             $this->unModele->insertClasse($tab);
         }
+        public function deleteClasse($idclasse){
+            //on controle la presence de l'ID
+            $this->unModele->deleteClasse($idclasse);
+        }
+        public function updateClasse($tab){
+            //on controle la presence de l'ID
+            $this->unModele->updateClasse($tab);
+        }
+        public function selectWhereClass($idclasse){
+            //on controle la presence de l'ID
+            $this->unModele->selectWhereClasse($idclasse);
+        }
         public function selectAllTeachers(){
             $Teachers = $this->unModele->selectAllTeachers();
             // on fait traiter les données

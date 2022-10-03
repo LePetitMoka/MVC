@@ -44,6 +44,37 @@
                 $insert->execute($donnees);
             }
         }
+        public function deleteClasse($idclasse){
+            if ($this->unPDO != null){
+                $requete = "delete from classe where idclasse = :idclasse; ";
+                $donnees = array(":idclasse"=>$idclasse);
+                $insert = $this->unPDO->prepare($requete);
+                $insert->execute($donnees);
+            }
+        }
+        public function updateClasse($tab){
+            if ($this->unPDO != null){
+                $requete = "update class set nom = :nom, salle = :salle, diplome = :diplome where idclasse = :idclasse; ";
+                $donnees = array(":nom"=>$tab['nom'],
+                ":salle"=>$tab['salle'],
+                ":diplome"=>$tab['diplome'],
+                ":idclasse"=>$tab['idclasse']);
+                $insert = $this->unPDO->prepare($requete);
+                $insert->execute($donnees);
+            }
+        }
+
+        public function selectWhereClasse($idclasse){
+            if ($this->unPDO != null){
+                $requete = "select * from classe where idclasse = :idclasse; ";
+                $donnees = array(":idclasse"=>$idclasse);
+                $insert = $this->unPDO->prepare($requete);
+                $insert->execute($donnees);
+                $uneClasse = $select->fetch(); //une seule classe
+                return $uneClasse;
+            }
+        }
+
         public function selectAllTeachers(){
             if ($this->unPDO != null){
                 $requete = "select * from professeur;";

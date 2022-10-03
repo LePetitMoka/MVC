@@ -18,8 +18,16 @@
             <td><input type="text" name="email"></td>
         </tr>
         <tr>
-            <td>ID Classe:</td>
-            <td><input type="text" name="idclasse" required></td>
+            <td>Classe:</td>
+            <td>
+                <select name="idclasse">
+                    <?php
+                        foreach ($lesClasses as $uneClasse){
+                            echo "<option value='".$uneClasse['idclasse']."'>".$uneClasse['nom']."</option>";
+                        }
+                    ?>
+                </select>
+            </td>
         </tr>
         <tr>
             <td><input type="reset" name="Annuler" value="Annuler"></td>

@@ -9,6 +9,7 @@
             <td>Annee</td>
             <td>ID Classe</td>
             <td>ID Professeur</td>
+            <td>Operations</td>
         </tr>
     <?php
         foreach ($Teachings as $Teaching){
@@ -20,6 +21,13 @@
             echo "<td>".$Teaching['annee']."</td>";
             echo "<td>".$Teaching['idclasse']."</td>";
             echo "<td>".$Teaching['idprofesseur']."</td>";
+
+            echo "<td> 
+            <a href='index.php?page=4&action=sup&idteaching=".$Teaching['idenseignement']."'> <img src='images/supp.png' height = '30' width = '30'> </a>
+            <a href='index.php?page=4&action=edit&idteaching=".$Teaching['idenseignement']."'> <img src='images/edit.png' height = '30' width = '30'> </a>";
+
+            echo "</td>";
+
             echo "</tr>";
         }
     ?>

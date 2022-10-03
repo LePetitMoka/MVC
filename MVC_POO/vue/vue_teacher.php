@@ -7,6 +7,7 @@
             <td>Prenom</td>
             <td>Diplome</td>
             <td>email</td>
+            <td>Operations</td>
         </tr>
     <?php
         foreach ($Teachers as $Teacher){
@@ -16,6 +17,13 @@
             echo "<td>".$Teacher['prenom']."</td>";
             echo "<td>".$Teacher['diplome']."</td>";
             echo "<td>".$Teacher['email']."</td>";
+
+            echo "<td> 
+            <a href='index.php?page=3&action=sup&idprofesseur=".$Teacher['idprofesseur']."'> <img src='images/supp.png' height = '30' width = '30'> </a>
+            <a href='index.php?page=3&action=edit&idprofesseur=".$Teacher['idprofesseur']."'> <img src='images/edit.png' height = '30' width = '30'> </a>";
+
+            echo "</td>";
+
             echo "</tr>";
         }
     ?>

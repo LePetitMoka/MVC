@@ -1,6 +1,8 @@
 <h2>Gestion des enseignements</h2>
 
 <?php
+    $lesClasses=$unControleur->selectAllClasses();
+    $Teachers=$unControleur->selectAllTeachers();
     echo "<br>";
     require_once ("vue/vue_insert_teaching.php");
     echo "<br>";
