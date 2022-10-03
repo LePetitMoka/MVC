@@ -19,16 +19,16 @@
         <center>
             <h1>Gestion de la scolarite d'IRIS</h1>
             <a href="index.php?page=0">
-                <img src="images/home.png" height="100" alt="">
+                <img src="images/home.png" height="100">
             </a>
             <a href="index.php?page=1">
-                <img src="images/class.png" height="100" alt="">
+                <img src="images/class.png" height="100">
             </a>
             <a href="index.php?page=2">
-                <img src="images/student.png" height="100" alt="">
+                <img src="images/student.png" height="100">
             </a>
             <a href="index.php?page=3">
-                <img src="images/teacher.png" height="100" alt="">
+                <img src="images/teacher.png" height="100">
             </a>
             <a href="index.php?page=4">
                 <img src="images/books.png" height="100" alt="">

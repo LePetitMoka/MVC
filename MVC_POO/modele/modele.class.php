@@ -34,6 +34,16 @@
                 return null;
             }
         }
+        public function insertClasse($tab){
+            if ($this->unPDO != null){
+                $requete = "insert into classe values (null, :nom, :salle, :diplome); ";
+                $donnees = array(":nom"=>$tab['nom'],
+                                ":salle"=>$tab['salle'],
+                                ":diplome"=>$tab['diplome']);
+                $insert = $this->unPDO->prepare($requete);
+                $insert->execute($donnees);
+            }
+        }
         public function selectAllTeachers(){
             if ($this->unPDO != null){
                 $requete = "select * from professeur;";
@@ -52,6 +62,17 @@
                 return $Teachers;
             } else {
                 return null;
+            }
+        }
+        public function insertTeacher($tab){
+            if ($this->unPDO != null){
+                $requete = "insert into professeur values (null, :nom, :prenom, :diplome, :email); ";
+                $donnees = array(":nom"=>$tab['nom'],
+                                ":prenom"=>$tab['prenom'],
+                                ":diplome"=>$tab['diplome'],
+                                ":email"=>$tab['email']);
+                $insert = $this->unPDO->prepare($requete);
+                $insert->execute($donnees);
             }
         }
         public function selectAllStudents(){

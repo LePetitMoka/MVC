@@ -15,11 +15,23 @@
 
             return $lesClasses;
         }
+        public function insertClasse($tab){
+            //appliquer des controles sur les données
+
+            //inserer dans la BDD
+            $this->unModele->insertClasse($tab);
+        }
         public function selectAllTeachers(){
             $Teachers = $this->unModele->selectAllTeachers();
             // on fait traiter les données
 
             return $Teachers;
+        }
+        public function insertTeacher($tab){
+            //appliquer des controles sur les données
+            
+            //inserer dans la BDD
+            $this->unModele->insertTeacher($tab);
         }
         public function selectAllStudents(){
             $Students = $this->unModele->selectAllStudents();

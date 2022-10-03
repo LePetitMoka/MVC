@@ -7,15 +7,15 @@
         </tr>
         <tr>
             <td>Prenom professeur:</td>
-            <td><input type="text" name="nom"></td>
+            <td><input type="text" name="prenom"></td>
         </tr>
         <tr>
             <td> Diplome:</td>
-            <td><input type="text" name="nom"></td>
+            <td><input type="text" name="diplome"></td>
         </tr>
         <tr>
             <td>Email:</td>
-            <td><input type="text" name="nom"></td>
+            <td><input type="text" name="email"></td>
         </tr>
         <tr>
             <td><input type="reset" name="Annuler" value="Annuler"></td>
