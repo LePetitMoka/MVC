@@ -3,19 +3,19 @@
     <table>
         <tr>
             <td>Matière:</td>
-            <td><input type="text" name="nom"></td>
+            <td><input type="text" name="matiere"></td>
         </tr>
         <tr>
             <td>Nombre d'heures:</td>
-            <td><input type="text" name="prenom"></td>
+            <td><input type="text" name="nbheures"></td>
         </tr>
         <tr>
             <td>Coefficient:</td>
-            <td><input type="text" name="adresse"></td>
+            <td><input type="text" name="coeff"></td>
         </tr>
         <tr>
             <td>Année:</td>
-            <td><input type="text" name="email"></td>
+            <td><input type="text" name="annee"></td>
         </tr>
         <tr>
             <td>ID Classe:</td>

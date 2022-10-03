@@ -95,6 +95,18 @@
                 return null;
             }
         }
+        public function insertStudent($tab){
+            if ($this->unPDO != null){
+                $requete = "insert into etudiant values (null, :nom, :prenom, :adresse, :email, :idclasse); ";
+                $donnees = array(":nom"=>$tab['nom'],
+                                ":prenom"=>$tab['prenom'],
+                                ":adresse"=>$tab['adresse'],
+                                ":email"=>$tab['email'],
+                                ":idclasse"=>$tab['idclasse']);
+                $insert = $this->unPDO->prepare($requete);
+                $insert->execute($donnees);
+            }
+        }
         public function selectAllTeachings(){
             if ($this->unPDO != null){
                 $requete = "select * from enseignement;";
@@ -113,6 +125,19 @@
                 return $Teachings;
             } else {
                 return null;
+            }
+        }
+        public function insertTeaching($tab){
+            if ($this->unPDO != null){
+                $requete = "insert into enseignement values (null, :matiere, :nbheures, :coeff, :annee, :idclasse, :idprof); ";
+                $donnees = array(":matiere"=>$tab['matiere'],
+                                ":nbheures"=>$tab['nbheures'],
+                                ":coeff"=>$tab['coeff'],
+                                ":annee"=>$tab['annee'],
+                                ":idprof"=>$tab['idprofesseur'],
+                                ":idclasse"=>$tab['idclasse']);
+                $insert = $this->unPDO->prepare($requete);
+                $insert->execute($donnees);
             }
         }
     }

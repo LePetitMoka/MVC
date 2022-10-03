@@ -39,11 +39,23 @@
 
             return $Students;
         }
+        public function insertStudent($tab){
+            //appliquer des controles sur les données
+            
+            //inserer dans la BDD
+            $this->unModele->insertStudent($tab);
+        }
         public function selectAllTeachings(){
             $Teachings = $this->unModele->selectAllTeachings();
             // on fait traiter les données
 
             return $Teachings;
+        }
+        public function insertTeaching($tab){
+            //appliquer des controles sur les données
+            
+            //inserer dans la BDD
+            $this->unModele->insertTeaching($tab);
         }
     }
 ?>
